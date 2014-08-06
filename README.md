@@ -6,8 +6,10 @@ Experiments with Vagrant, Chef and CentOS to use in development purposes
 Requirements
 ------------
 
+ - [Ruby](https://www.ruby-lang.org/en/installation/)
  - [Vagrant](http://www.vagrantup.com/downloads.html)
  - [Chef Client](http://www.getchef.com/chef/install/)
+ 
 
 Used cookbooks
 ------------
@@ -20,8 +22,8 @@ Usage
 $ vagrant box add centos64-x86_64 http://developer.nrel.gov/downloads/vagrant-boxes/CentOS-6.4-x86_64-v20131103.box
 $ git clone git://github.com/killmenot/chef-solo-example
 $ cd chef-solo-example
-$ git checkout vagrant
 $ bundle
+$ librarian-chef install
 $ vagrant up
 ```
 
